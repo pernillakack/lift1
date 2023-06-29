@@ -6,6 +6,7 @@ import { chosenExercise } from '@/functions/renderExercises'
 import { TiPlus,TiMinus } from 'react-icons/ti'
 import Button from '@/Components/button';
 import Link from 'next/link';
+import style from './modules/button.module.css'
 
 
 interface Props {}
@@ -62,7 +63,7 @@ const handleExercise = (element: { nr: number; exercise: string; muscleGroup: st
             bottom: '32px'
         }}>
             <Link href={"/set_reps"}>
-                <Button className={""} text={"Gå vidare >"} onClick={handleClick}></Button>
+                <Button className={style.redButton} text={"Gå vidare >"} onClick={handleClick}></Button>
             </Link>
         </div>
     </div>

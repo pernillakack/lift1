@@ -4,6 +4,7 @@ import { MyContext } from '@/context/my-context-provider';
 import { NextPage } from 'next'
 import Link from 'next/link';
 import { useState, useContext } from 'react';
+import style from './button.module.css'
 
 interface Props {}
 
@@ -91,7 +92,7 @@ const Set_reps: NextPage<Props> = ({}) => {
     </div>
     <Link href="/minaPass">
   <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2">
-    <Button className='' text="Skapa pass >" onClick={handleClick} />
+    <Button className='redButton' text="Skapa pass >" onClick={handleClick} />
   </div>
 </Link>
 
